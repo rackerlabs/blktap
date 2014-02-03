@@ -158,7 +158,7 @@ out:
 	return err;
 }
 
-static int
+int
 vhd_util_coalesce_parent(const char *name, int sparse, int progress,
         const char *step_parent)
 {
@@ -487,7 +487,7 @@ out:
 	return err;
 }
 
-static int
+int
 vhd_util_coalesce_ancestor(const char *cname,
 			   const char *aname, int sparse, int progress)
 {
@@ -601,7 +601,7 @@ done:
 	return err;
 }
 
-static int
+int
 vhd_util_coalesce_out(const char *src_name, const char *dst_name,
 		      int sparse, int progress)
 {
