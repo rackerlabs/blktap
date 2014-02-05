@@ -1053,7 +1053,7 @@ vhd_util_dump_headers(const char *name)
 	vhd_util_read(argc, argv);
 }
 
-static int
+int
 vhd_util_check_vhd(struct vhd_util_check_ctx *ctx, const char *name)
 {
 	int fd, err;
@@ -1131,7 +1131,7 @@ out:
 	return err;
 }
 
-static int
+int
 vhd_util_check_parents(struct vhd_util_check_ctx *ctx, const char *name)
 {
 	int err;
